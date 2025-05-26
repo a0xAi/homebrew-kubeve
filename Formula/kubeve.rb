@@ -5,20 +5,20 @@
 class Kubeve < Formula
   desc ""
   homepage "https://github.com/a0xAi/kubeve"
-  version "0.3.14"
+  version "0.3.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.14/kubeve_Darwin_x86_64.tar.gz"
-      sha256 "f66387e95e225e515983c139ae605ff9a3024db82170e731e92597cfb4db19a0"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.15/kubeve_Darwin_x86_64.tar.gz"
+      sha256 "13436d92f4ca887f06e0bd6a3a9f1ac5787a1abf9aa03beb64b5e5679decf97a"
 
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.14/kubeve_Darwin_arm64.tar.gz"
-      sha256 "b10b8150c14f785af991ba938a600049a7cb5808137858675892dcd7469c4457"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.15/kubeve_Darwin_arm64.tar.gz"
+      sha256 "f5b4358d38f694194496d57a4ebae50087db77694f1a6f196cf8caa4cf1ca571"
 
       def install
         bin.install "kubeve"
@@ -28,15 +28,15 @@ class Kubeve < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.14/kubeve_Linux_x86_64.tar.gz"
-      sha256 "3313f677c808bbe2b530eb2adb71f729d0ea90b32ed4b6988ad93c2dbb0d4db5"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.15/kubeve_Linux_x86_64.tar.gz"
+      sha256 "5d355bf856c4f76910040b8919f945f17acdf610e23db914043b9bfd0995400f"
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.14/kubeve_Linux_arm64.tar.gz"
-      sha256 "b23e2caf62fd835662bbc5fc81a5ec44d9de4e9d9c0de5bfc34d13ae58f49793"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.15/kubeve_Linux_arm64.tar.gz"
+      sha256 "9baeacaa7897cee6240079224390604e83d200871da0bb92bcce041a23224257"
       def install
         bin.install "kubeve"
       end
