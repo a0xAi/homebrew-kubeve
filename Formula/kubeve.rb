@@ -5,20 +5,20 @@
 class Kubeve < Formula
   desc ""
   homepage "https://github.com/a0xAi/kubeve"
-  version "0.3.17"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.17/kubeve_Darwin_x86_64.tar.gz"
-      sha256 "46461ce37d2fa7abaa0c044f2a4333dec1c9d8787edb0880c1b3ff706c39f809"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.0/kubeve_Darwin_x86_64.tar.gz"
+      sha256 "4428204c6770ce2a858835840aaa9f976e2212058b03b569462fd7390faead43"
 
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.17/kubeve_Darwin_arm64.tar.gz"
-      sha256 "12373c2c944d22465bab25511faac7809f7d05d40e558834f16013c15aeceb9f"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.0/kubeve_Darwin_arm64.tar.gz"
+      sha256 "e8b9f7a8391ed530603797156a04b0ba1a221f7478487d7b1d2a077ae260ae7c"
 
       def install
         bin.install "kubeve"
@@ -28,15 +28,15 @@ class Kubeve < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.17/kubeve_Linux_x86_64.tar.gz"
-      sha256 "82a84978f1d788863db31ef8149a1397d1212ed21a1a3726c5665fbb8e8beae6"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.0/kubeve_Linux_x86_64.tar.gz"
+      sha256 "4337455a040badbb082e9379a991871989b9fcf7223465886367da28b1b11fbe"
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.3.17/kubeve_Linux_arm64.tar.gz"
-      sha256 "254a47fa3c3d547be2f69df05d476962d66d7d5bd5f9eea3f8c3a40c3deef62a"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.0/kubeve_Linux_arm64.tar.gz"
+      sha256 "6126a2ce4df2356505b166deb0734deef2126f27930aec015c9dadeb021dd8aa"
       def install
         bin.install "kubeve"
       end
