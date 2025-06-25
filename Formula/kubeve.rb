@@ -5,20 +5,20 @@
 class Kubeve < Formula
   desc ""
   homepage "https://github.com/a0xAi/kubeve"
-  version "0.4.1"
+  version "0.4.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.1/kubeve_Darwin_x86_64.tar.gz"
-      sha256 "a6b2109bcb72eb1152b4d8172a169873b9c3534b44d9113f50239cc39c7df8b1"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Darwin_x86_64.tar.gz"
+      sha256 "4450e39ceec4a68031e36e7ac25201ff334df366a2ab71a633fe4756749d65b7"
 
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.1/kubeve_Darwin_arm64.tar.gz"
-      sha256 "2d6217228bc6cf2d2c7a827f8cf16a4c7e77fbdaec5e5f9cba61442625c8ec04"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Darwin_arm64.tar.gz"
+      sha256 "769b89592054dc1092cc8372a1cfcc6bc4187311bd7113e080b6be0d38f0baa9"
 
       def install
         bin.install "kubeve"
@@ -28,15 +28,15 @@ class Kubeve < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.1/kubeve_Linux_x86_64.tar.gz"
-      sha256 "c28623b05cbd15a98e0c73f9f3109df47aad2fe1f7e91a4a719b9dd918de91ce"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Linux_x86_64.tar.gz"
+      sha256 "ea0a66a1d0e0f96907212f68c1eaef5e9dba76a8f0d581bbfc2a2d6eed7c87c2"
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.1/kubeve_Linux_arm64.tar.gz"
-      sha256 "4a18a4ad97bfeca928339e0ba0f6c0b5d5c55c74a5fb0a18346ae69c6943b3fd"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Linux_arm64.tar.gz"
+      sha256 "0e79fca11addfcd19846040e09909c08bbbf5ed5b0910a01365c4266eaf06788"
       def install
         bin.install "kubeve"
       end
