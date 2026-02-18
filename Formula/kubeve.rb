@@ -5,20 +5,20 @@
 class Kubeve < Formula
   desc ""
   homepage "https://github.com/a0xAi/kubeve"
-  version "0.4.2"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Darwin_x86_64.tar.gz"
-      sha256 "4450e39ceec4a68031e36e7ac25201ff334df366a2ab71a633fe4756749d65b7"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.5.0/kubeve_Darwin_x86_64.tar.gz"
+      sha256 "a6a3a594b314697199dbbe93e5323d81146bd084604518261cfd72777c01e9a6"
 
       def install
         bin.install "kubeve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Darwin_arm64.tar.gz"
-      sha256 "769b89592054dc1092cc8372a1cfcc6bc4187311bd7113e080b6be0d38f0baa9"
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.5.0/kubeve_Darwin_arm64.tar.gz"
+      sha256 "9d478f3441cd551532569789c1679013ac25851f4461f00dc64aab39fc55c671"
 
       def install
         bin.install "kubeve"
@@ -27,16 +27,16 @@ class Kubeve < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Linux_x86_64.tar.gz"
-      sha256 "ea0a66a1d0e0f96907212f68c1eaef5e9dba76a8f0d581bbfc2a2d6eed7c87c2"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.5.0/kubeve_Linux_x86_64.tar.gz"
+      sha256 "840dbaed507fff05073eaf611381975e92c0afecf324f353f9aad71d9484d8da"
       def install
         bin.install "kubeve"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/a0xAi/kubeve/releases/download/v0.4.2/kubeve_Linux_arm64.tar.gz"
-      sha256 "0e79fca11addfcd19846040e09909c08bbbf5ed5b0910a01365c4266eaf06788"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/a0xAi/kubeve/releases/download/v0.5.0/kubeve_Linux_arm64.tar.gz"
+      sha256 "6df4800268bb3bac7966034da43bd2d2308ba14118bc4c5fe1a56fd91df67f76"
       def install
         bin.install "kubeve"
       end
